@@ -1,6 +1,6 @@
 // back-end
   var ounces = function (number1) {
-    return number1 * 28.3495  + " ounces";
+    return number1 * 28.3495;
   };
 
   var gallons = function(number1) {
@@ -19,7 +19,7 @@ $(document).ready(function() {
     event.preventDefault();
     var number1 = parseInt($("#ounces").val());
     var result = ounces(number1);
-    $(".output1").text(result);
+    $(".output1").text(result + " ounces");
   });
 
     $("form#form2").submit(function(event){
